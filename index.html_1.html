@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ديكورات ودهانات لمسات فنية</title>
+<meta name="description" content="ديكورات ودهانات لمسات فنية">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   ROOT & RESET – تصميم دافئ (بني ترابي وكريمي)
+============================================================ */
+:root{
+  /* اللونين الأساسيين من الصورة */
+  --brown: #8B4513;
+  --brown-light: #A0522D;
+  --brown-dark: #5A2D0C;
+  --cream: #FFF5E1;
+  --cream-dark: #F2E3C6;
+  
+  /* التدرجات والخلفيات */
+  --bg: var(--cream);
+  --bg-gradient: linear-gradient(135deg, #FFF5E1 0%, #FDF0D5 100%);
+  --bg-dark: var(--brown);
+  
+  /* ألوان النصوص */
+  --text: var(--brown-dark);
+  --text-main: var(--brown);
+  --text-light: var(--cream);
+  --text-muted: #6E3B12;
+  
+  /* الحدود والظلال */
+  --line: rgba(139, 69, 19, 0.15);
+  --line-strong: rgba(139, 69, 19, 0.3);
+  --shadow: 0 10px 30px rgba(139, 69, 19, 0.08);
+  --shadow-hover: 0 20px 40px rgba(139, 69, 19, 0.15);
+  
+  --heading: 'Alexandria', 'Tajawal', sans-serif;
+  --body: 'Tajawal', 'Alexandria', sans-serif;
+  --r: 14px;
+  --r-lg: 22px;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family: var(--body);
+  background: var(--bg-gradient);
+  background-attachment: fixed;
+  color: var(--text);
+  line-height: 1.75;
+  overflow-x: hidden;
+  direction: rtl;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul{list-style:none}
+.container{width:100%;max-width:1320px;margin:0 auto;padding:0 32px}
+::selection{background:var(--brown);color:var(--cream)}
+
+/* ============================================================
+   UTILITIES
+============================================================ */
+.eyebrow{
+  display:inline-flex;align-items:center;gap:12px;
+  font-size:.8rem;font-weight:700;letter-spacing:2.5px;
+  color:var(--brown);text-transform:uppercase;margin-bottom:22px;
+  font-family:var(--body);
+}
+.eyebrow::before{content:"";width:40px;height:2px;background:var(--brown)}
+.eyebrow.center{justify-content:center}
+.eyebrow.center::after{content:"";width:40px;height:2px;background:var(--brown)}
+
+.eyebrow.light { color: var(--cream); }
+.eyebrow.light::before, .eyebrow.light::after { background: var(--cream); }
+
+.heading-xl{
+  font-family:var(--heading);
+  font-size:clamp(2.4rem,6vw,5.2rem);
+  font-weight:800;line-height:1.2;
+  color:var(--brown-dark);letter-spacing:-1px;
+}
+.heading-lg{
+  font-family:var(--heading);
+  font-size:clamp(2rem,4.5vw,3.6rem);
+  font-weight:700;line-height:1.3;
+  color:var(--brown-dark);letter-spacing:-0.5px;
+}
+.heading-md{
+  font-family:var(--heading);
+  font-size:clamp(1.4rem,2.4vw,2rem);
+  font-weight:700;line-height:1.3;
+  color:var(--brown-dark);
+}
+.lead{
+  font-size:1.1rem;color:var(--text-muted);line-height:1.85;font-weight:500;
+  max-width:620px;
+}
+.sec-num{
+  font-family:var(--heading);font-size:.9rem;font-weight:700;
+  color:var(--brown);letter-spacing:2px;
+  display:inline-flex;align-items:center;gap:10px;margin-bottom:18px;
+}
+.sec-num::after{content:"";width:32px;height:2px;background:var(--brown);opacity:.6}
+
+.section{padding:130px 0;position:relative}
+.section-head{margin-bottom:70px}
+.section-head.center{text-align:center;max-width:820px;margin-left:auto;margin-right:auto}
+.section-head.center .lead{margin-left:auto;margin-right:auto}
+
+/* أقسام داكنة (بني) */
+.section-dark {
+  background: var(--brown);
+  color: var(--cream);
+}
+.section-dark .heading-lg, .section-dark .sec-num { color: var(--cream); }
+.section-dark .lead { color: var(--cream); opacity: 0.85; }
+
+/* ============================================================
+   BUTTONS
+============================================================ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:15px 28px;border-radius:100px;
+  font-family:var(--body);font-weight:700;font-size:.95rem;
+  transition:.35s cubic-bezier(.2,.8,.2,1);cursor:pointer;
+  border:1.5px solid transparent;position:relative;
+  letter-spacing:.3px;white-space:nowrap;
+}
+.btn svg{width:16px;height:16px;fill:currentColor;transition:.3s}
+.btn:hover svg{transform:translateX(-4px)}
+
+.btn-gold{
+  background:var(--brown);color:var(--cream);
+  border-color:var(--brown);
+  box-shadow: 0 4px 15px rgba(139,69,19,.2);
+}
+.btn-gold:hover{
+  background:var(--brown-light);border-color:var(--brown-light);
+  transform:translateY(-2px);
+  box-shadow:0 10px 25px rgba(139,69,19,.3);
+}
+
+.btn-outline{
+  background:transparent;color:var(--brown);
+  border-color:var(--brown);
+}
+.btn-outline:hover{
+  background:var(--brown);color:var(--cream);
+}
+
+/* أزرار للأقسام الداكنة */
+.section-dark .btn-gold {
+  background: var(--cream); color:var(--brown); border-color: var(--cream);
+}
+.section-dark .btn-gold:hover {
+  background: #FFF; border-color: #FFF;
+  box-shadow:0 10px 25px rgba(255,245,225,.2);
+}
+.section-dark .btn-outline {
+  color: var(--cream); border-color: var(--cream);
+}
+.section-dark .btn-outline:hover {
+  background: var(--cream); color: var(--brown);
+}
+
+.btn-ghost{
+  background:rgba(139,69,19,.05);color:var(--brown);border-color:var(--line);
+}
+.btn-ghost:hover{background:rgba(139,69,19,.1);color:var(--brown-dark);border-color:var(--brown)}
+.btn-lg{padding:18px 36px;font-size:1.05rem}
+
+/* ============================================================
+   HEADER & LOGO
+============================================================ */
+.site-header{
+  position:fixed;top:0;left:0;right:0;z-index:900;
+  background:rgba(255,245,225,.85);
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border-bottom:1px solid transparent;transition:.4s;
+}
+.site-header.scrolled{
+  background:rgba(255,245,225,.95);
+  border-bottom-color:var(--line);
+  box-shadow: 0 4px 20px rgba(139,69,19,.05);
+}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:32px;padding:18px 0;
+}
+.brand{display:flex;align-items:center;gap:12px}
+
+/* الشعار في الهيدر (خلفية فاتحة) */
+.brand-mark{
+  width: 85px;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  margin: -15px 0; /* سحب لتقليل المساحة الفارغة */
+}
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* إزالة الخلفية البيضاء/الفاتحة للشعار */
+  mix-blend-mode: multiply; 
+  filter: contrast(1.1);
+}
+
+.brand-text{line-height:1.15}
+.brand-name{
+  font-family:var(--heading);font-size:1.2rem;font-weight:800;
+  color:var(--brown-dark);letter-spacing:-.3px;
+}
+.brand-tag{
+  font-size:.75rem;color:var(--text-muted);letter-spacing:1px;margin-top:2px;font-weight:600;
+}
+.primary-nav{display:flex;justify-content:center;flex:1}
+.nav-list{display:flex;align-items:center;gap:4px}
+.nav-link{
+  position:relative;padding:10px 18px;font-size:.95rem;font-weight:700;
+  color:var(--text-muted);transition:.25s;
+  display:flex;align-items:center;gap:6px;
+}
+.nav-link:hover,.nav-link.active{color:var(--brown)}
+.nav-link::after{
+  content:"";position:absolute;bottom:4px;right:18px;left:18px;
+  height:2px;background:var(--brown);transform:scaleX(0);
+  transform-origin:right;transition:transform .3s;
+}
+.nav-link:hover::after,.nav-link.active::after{transform:scaleX(1)}
+.nav-link .caret{width:12px;height:12px;fill:currentColor;transition:.3s}
+.nav-item:hover .caret{transform:rotate(180deg)}
+.nav-item{position:relative}
+.dropdown{
+  position:absolute;top:calc(100% + 10px);right:0;min-width:240px;
+  background:var(--brown);border:1px solid var(--line);
+  border-radius:var(--r-lg);padding:12px;
+  opacity:0;visibility:hidden;transform:translateY(8px);
+  transition:.3s;box-shadow:0 24px 60px rgba(0,0,0,.15);
+}
+.nav-item:hover .dropdown{opacity:1;visibility:visible;transform:translateY(0)}
+.dropdown a{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:11px 14px;border-radius:10px;font-size:.9rem;font-weight:600;
+  color:var(--cream);transition:.22s;
+}
+.dropdown a:hover{background:rgba(255,245,225,.1);color:#fff;padding-right:18px}
+.header-cta{display:flex;align-items:center;gap:12px}
+.header-cta .btn{padding:11px 22px;font-size:.9rem}
+.burger{
+  display:none;width:44px;height:44px;border-radius:10px;
+  border:1.5px solid var(--brown);align-items:center;justify-content:center;
+  flex-direction:column;gap:5px;transition:.3s;
+}
+.burger:hover{background:rgba(139,69,19,.1)}
+.burger span{display:block;width:18px;height:2px;background:var(--brown);border-radius:2px;transition:.3s}
+
+/* ============================================================
+   HERO
+============================================================ */
+.hero{
+  position:relative;padding:170px 0 100px;
+  overflow:hidden;
+}
+.hero::before{
+  content:"";position:absolute;top:-30%;right:-10%;width:800px;height:800px;
+  background:radial-gradient(circle, rgba(139,69,19,.08), transparent 65%);
+  border-radius:50%;pointer-events:none;
+}
+.hero::after{
+  content:"";position:absolute;bottom:-40%;left:-15%;width:600px;height:600px;
+  background:radial-gradient(circle, rgba(255,255,255,.4), transparent 65%);
+  border-radius:50%;pointer-events:none;
+}
+.hero-grid{
+  position:relative;z-index:2;
+  display:grid;grid-template-columns:1.1fr 1fr;gap:70px;
+  align-items:center;
+}
+.hero-title{
+  font-family:var(--heading);font-weight:800;
+  font-size:clamp(2.6rem,6vw,5.4rem);
+  line-height: 1.3;
+  letter-spacing: -1px;
+  margin-bottom:28px;color:var(--brown-dark);
+}
+.hero-title em{
+  font-style:normal;color:var(--brown);
+  position:relative;display:inline-block;
+}
+.hero-title em::after{
+  content:"";position:absolute;bottom:8px;right:0;left:0;
+  height:3px;background:var(--brown);opacity:.3;border-radius:2px;
+}
+.hero-desc{
+  font-size:1.1rem;color:var(--text-muted);line-height:1.9;font-weight: 500;
+  margin-bottom:38px;max-width:520px;
+}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:56px}
+.hero-meta{
+  display:flex;gap:44px;flex-wrap:wrap;
+  padding-top:34px;border-top:1px solid var(--line-strong);
+}
+.hero-meta-item{display:flex;flex-direction:column;gap:6px}
+.hero-meta-num{
+  font-family:var(--heading);font-size:2.4rem;font-weight:800;
+  color:var(--brown);line-height:1;letter-spacing:-1px;
+}
+.hero-meta-label{font-size:.9rem;color:var(--text-muted);font-weight:600;letter-spacing:.5px}
+
+/* ============================================================
+   HERO VISUAL - BENTO GRID
+============================================================ */
+.hero-visual {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  z-index: 2;
+}
+
+.hero-bento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
+  gap: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-box {
+  position: relative;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  border: 4px solid var(--cream);
+  box-shadow: 0 15px 35px rgba(139,69,19,.1);
+  transition: .4s cubic-bezier(.2,.8,.2,1);
+  cursor: pointer;
+}
+
+.hero-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 50px rgba(139,69,19,.25);
+  border-color: var(--brown);
+}
+
+.hero-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 1s;
+}
+
+.hero-box:hover img {
+  transform: scale(1.1);
+}
+
+/* خصائص المربعات */
+.box-main {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.box-square {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.box-icon {
+  grid-column: span 1;
+  grid-row: span 1;
+  background: #198754; /* أخضر غامق */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #fff;
+  border: 4px solid var(--cream);
+}
+
+.box-icon:hover {
+  background: #146c43;
+}
+
+.box-icon svg {
+  width: 42px;
+  height: 42px;
+  fill: #fff;
+}
+
+.box-icon span {
+  font-family: var(--heading);
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.box-wide {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+/* ============================================================
+   MARQUEE
+============================================================ */
+.marquee{
+  padding:26px 0;overflow:hidden;position:relative;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  background: rgba(139,69,19,.05);
+}
+.marquee-track{
+  display:flex;gap:60px;white-space:nowrap;
+  animation:scroll-x 40s linear infinite;width:max-content;
+}
+.marquee-item{
+  display:flex;align-items:center;gap:60px;
+  font-family:var(--heading);font-size:1.4rem;font-weight:700;
+  color:var(--brown);letter-spacing:-.5px;
+}
+.marquee-item::after{content:"✦";color:var(--brown);font-size:1rem;opacity:.4;}
+@keyframes scroll-x{
+  from{transform:translateX(0)}
+  to{transform:translateX(50%)}
+}
+
+/* ============================================================
+   SERVICES – Bento Grid (Dark Section)
+============================================================ */
+.services{background:var(--brown); position:relative;overflow:hidden;}
+.services::before {
+  content:"";position:absolute;top:-20%;left:-10%;width:600px;height:600px;
+  background:radial-gradient(circle, rgba(255,245,225,.08), transparent 65%);
+  border-radius:50%;pointer-events:none;
+}
+.bento{
+  position:relative;z-index:2;
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+.bento-item{
+  position:relative;border-radius:var(--r-lg);
+  overflow:hidden;cursor:pointer;
+  background:var(--brown-light);border:1px solid rgba(255,245,225,.2);
+  transition:.4s;min-height:320px;
+  display:flex;flex-direction:column;
+}
+.bento-item:hover{
+  border-color:var(--cream);transform:translateY(-4px);
+  box-shadow:0 20px 40px rgba(0,0,0,.3);
+}
+.bento-item.featured{grid-column:span 2;min-height:340px}
+.bento-img{
+  position:absolute;inset:0;z-index:0;
+}
+.bento-img img{
+  width:100%;height:100%;object-fit:cover;
+  transition:.9s;filter:brightness(.7);
+}
+.bento-item:hover .bento-img img{
+  transform:scale(1.08);filter:brightness(.9);
+}
+.bento-img::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(to top, rgba(90,45,12,.95) 0%, rgba(90,45,12,.4) 50%, transparent 100%);
+}
+.bento-content{
+  position:relative;z-index:2;padding:32px;
+  margin-top:auto;display:flex;flex-direction:column;
+}
+.bento-num{
+  position:absolute;top:24px;left:28px;z-index:3;
+  font-family:var(--heading);font-size:.9rem;font-weight:800;
+  color:var(--brown);letter-spacing:1px;
+  background:var(--cream);
+  padding:6px 14px;border-radius:100px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.2);
+}
+.bento-tag{
+  display:inline-block;color:var(--cream);
+  font-size:.8rem;font-weight:800;letter-spacing:1.5px;
+  text-transform:uppercase;margin-bottom:10px;
+}
+.bento-title{
+  font-family:var(--heading);font-size:1.5rem;font-weight:800;
+  color:#fff;line-height:1.3;margin-bottom:8px;
+  letter-spacing:-.5px;
+}
+.bento-item.featured .bento-title{font-size:2rem}
+.bento-desc{
+  font-size:.95rem;color:rgba(255,245,225,.85);line-height:1.7;font-weight: 500;
+  margin-bottom:18px;max-width:440px;
+  opacity:0;max-height:0;transition:.4s;overflow:hidden;
+}
+.bento-item:hover .bento-desc{opacity:1;max-height:100px;margin-bottom:18px}
+.bento-link{
+  display:inline-flex;align-items:center;gap:8px;
+  color:var(--cream);font-size:.9rem;font-weight:800;
+  letter-spacing:.5px;
+}
+.bento-link svg{width:14px;height:14px;fill:currentColor;transition:.3s}
+.bento-item:hover .bento-link svg{transform:translateX(-4px)}
+
+/* ============================================================
+   STATS (Light Section)
+============================================================ */
+.stats{padding:100px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line); background: var(--cream);}
+.stats-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:0;
+}
+.stat{
+  padding:20px 30px;
+  border-left:1px solid var(--line-strong);
+  display:flex;flex-direction:column;gap:10px;
+  text-align: center;
+}
+.stat:last-child{border-left:none}
+.stat-num{
+  font-family:var(--heading);font-size:clamp(2.4rem,4.5vw,3.8rem);
+  font-weight:800;color:var(--brown);line-height:1;letter-spacing:-2px;
+}
+.stat-lbl{font-size:1rem;color:var(--text-muted);font-weight:600;line-height:1.5}
+
+/* ============================================================
+   GALLERY (Dark Section)
+============================================================ */
+.gallery{background:var(--brown);position:relative;}
+.gallery-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  grid-auto-rows:230px;gap:14px;
+}
+.gallery-item{
+  position:relative;border-radius:var(--r);overflow:hidden;
+  cursor:pointer;transition:.4s;border:4px solid var(--brown-light);
+  box-shadow: 0 4px 15px rgba(0,0,0,.2);
+}
+.gallery-item.tall{grid-row:span 2}
+.gallery-item.wide{grid-column:span 2}
+.gallery-item:hover{border-color:var(--cream); box-shadow: 0 10px 30px rgba(0,0,0,.4);}
+.gallery-item img{
+  width:100%;height:100%;object-fit:cover;
+  transition:1s;filter:brightness(.8);
+}
+.gallery-item:hover img{transform:scale(1.08);filter:brightness(1)}
+.gallery-item::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(to top, rgba(90,45,12,.9) 0%, transparent 60%);
+  opacity:.8;transition:.4s;
+}
+.gallery-item:hover::after{opacity:1}
+.gallery-cap{
+  position:absolute;bottom:0;right:0;left:0;padding:22px;z-index:2;
+  transform:translateY(8px);transition:.4s;
+}
+.gallery-item:hover .gallery-cap{transform:translateY(0)}
+.gallery-cap-tag{
+  color:var(--cream);font-size:.8rem;letter-spacing:1.5px;
+  font-weight:800;text-transform:uppercase;margin-bottom:4px;
+}
+.gallery-cap-title{
+  color:#fff;font-family:var(--heading);
+  font-size:1.05rem;font-weight:700;line-height:1.3;
+}
+
+/* ============================================================
+   PROCESS (Light Section)
+============================================================ */
+.process{background:var(--cream);position:relative;overflow:hidden;}
+.timeline{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:24px;position:relative;margin-top:80px;
+}
+.timeline::before{
+  content:"";position:absolute;top:38px;right:10%;left:10%;height:2px;
+  background:linear-gradient(90deg, transparent, var(--brown) 20%, var(--brown) 80%, transparent);
+  opacity: 0.2;
+  z-index:0;
+}
+.step{position:relative;z-index:1;text-align:center}
+.step-num{
+  width:76px;height:76px;border-radius:50%;
+  background:var(--brown);border:2px solid var(--brown);
+  display:flex;align-items:center;justify-content:center;margin:0 auto 24px;
+  font-family:var(--heading);font-size:1.4rem;font-weight:800;
+  color:var(--cream);transition:.4s;
+  box-shadow:0 0 0 8px var(--cream);
+}
+.step:hover .step-num{
+  background:var(--cream);color:var(--brown);
+  transform:translateY(-4px);
+  box-shadow:0 0 0 8px var(--cream), 0 20px 40px rgba(139,69,19,.2);
+}
+.step h4{
+  font-family:var(--heading);font-size:1.2rem;font-weight:800;
+  color:var(--brown-dark);margin-bottom:10px;letter-spacing:-.3px;
+}
+.step p{font-size:.95rem;color:var(--text-muted);line-height:1.7;max-width:240px;margin:0 auto;font-weight: 500;}
+
+/* ============================================================
+   CTA (Dark Box on Light BG)
+============================================================ */
+.cta-section{padding:100px 0;position:relative; background:var(--cream);}
+.cta-box{
+  position:relative;overflow:hidden;
+  background:var(--brown);
+  border:1px solid var(--brown);
+  border-radius:24px;padding:80px 70px;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:60px;flex-wrap:wrap;
+  box-shadow: 0 20px 60px rgba(139,69,19,.2);
+}
+.cta-box::before{
+  content:"";position:absolute;top:-100px;left:-100px;width:400px;height:400px;
+  background:radial-gradient(circle, rgba(255,245,225,.15), transparent 65%);
+  border-radius:50%;pointer-events:none;
+}
+.cta-content{position:relative;z-index:2;max-width:680px}
+.cta-content .heading-lg{margin-bottom:16px;letter-spacing:-1px; color: var(--cream);}
+.cta-content .heading-lg em{color:#fff;font-style:normal}
+.cta-content p{color:rgba(255,245,225,.85);font-size:1.1rem;line-height:1.9;font-weight: 500;}
+.cta-actions{display:flex;gap:14px;flex-wrap:wrap;position:relative;z-index:2}
+
+/* ============================================================
+   FOOTER (Dark)
+============================================================ */
+.site-footer{
+  background:var(--brown);
+  border-top:1px solid rgba(255,245,225,.2);
+  padding:90px 0 0;
+}
+.footer-grid{
+  display:grid;grid-template-columns:1.5fr 1fr 1fr 1.3fr;
+  gap:60px;padding-bottom:70px;
+  border-bottom:1px solid rgba(255,245,225,.2);
+}
+.footer-brand{display:flex;align-items:center;gap:14px;margin-bottom:22px}
+
+/* الشعار في الفوتر (خلفية داكنة) */
+.footer-brand .brand-mark {
+  width: 85px; height: 85px; border: none; background: transparent; margin: -15px 0 -5px 0;
+}
+.footer-brand .brand-mark img {
+  /* إزالة الخلفية السوداء/الداكنة للشعار */
+  mix-blend-mode: screen; 
+  filter: brightness(1.2);
+}
+
+.footer-brand .brand-name { color: var(--cream); }
+.footer-brand .brand-tag { color: rgba(255,245,225,.6); }
+.footer-about{
+  color:rgba(255,245,225,.7);font-size:.95rem;line-height:1.85;font-weight: 500;
+  margin-bottom:24px;
+}
+.footer-social{display:flex;gap:10px}
+.footer-social a{
+  width:42px;height:42px;border-radius:10px;
+  background:rgba(255,245,225,.05);border:1px solid rgba(255,245,225,.2);
+  display:flex;align-items:center;justify-content:center;transition:.3s;
+}
+.footer-social a:hover{
+  background:var(--cream);border-color:var(--cream);
+}
+.footer-social svg{width:18px;height:18px;fill:var(--cream);transition:.3s}
+.footer-social a:hover svg{fill:var(--brown)}
+
+.footer-col h5{
+  font-family:var(--heading);font-size:1.1rem;font-weight:800;
+  color:var(--cream);margin-bottom:24px;letter-spacing:-.3px;
+}
+.footer-col ul{display:flex;flex-direction:column;gap:14px}
+.footer-col a{
+  color:rgba(255,245,225,.7);font-size:.95rem;transition:.25s;font-weight: 600;
+  display:inline-flex;align-items:center;gap:8px;
+}
+.footer-col a::before{
+  content:"";width:0;height:2px;background:var(--cream);
+  transition:.3s;
+}
+.footer-col a:hover{color:var(--cream)}
+.footer-col a:hover::before{width:14px}
+.footer-contact li{
+  display:flex;gap:14px;color:rgba(255,245,225,.7);font-size:.95rem;font-weight: 600;
+  margin-bottom:18px;align-items:flex-start;
+}
+.footer-contact svg{
+  width:18px;height:18px;fill:var(--cream);flex-shrink:0;margin-top:3px;
+}
+.footer-bottom{
+  display:flex;justify-content:space-between;align-items:center;
+  gap:16px;flex-wrap:wrap;padding:30px 0;
+  font-size:.9rem;color:rgba(255,245,225,.5);font-weight: 500;
+}
+.footer-bottom a{color:var(--cream);transition:.25s}
+.footer-bottom a:hover{color:#fff}
+
+/* ============================================================
+   FLOATING ACTIONS
+============================================================ */
+.float-actions{
+  position:fixed;bottom:26px;left:26px;z-index:880;
+  display:flex;flex-direction:column;gap:12px;
+}
+.float-btn{
+  width:58px;height:58px;border-radius:16px;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 12px 32px rgba(0,0,0,.15);
+  transition:.3s;
+}
+.float-btn:hover{transform:translateY(-4px) scale(1.05)}
+.float-whats{background:#25d366}
+/* زر الاتصال أخضر غامق */
+.float-call{background:#198754; border: 2px solid #fff;}
+.float-btn svg{width:26px;height:26px;fill:#fff}
+.float-call svg{fill:#fff}
+
+/* ============================================================
+   MODAL
+============================================================ */
+.modal{
+  position:fixed;inset:0;background:rgba(139,69,19,.8);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  z-index:1000;display:flex;align-items:center;justify-content:center;
+  padding:20px;opacity:0;visibility:hidden;transition:.3s;
+}
+.modal.open{opacity:1;visibility:visible}
+.modal-box{
+  background:var(--cream);border-radius:var(--r-lg);
+  width:100%;max-width:560px;padding:48px 40px;
+  position:relative;max-height:92vh;overflow-y:auto;
+  transform:scale(.94);transition:.3s;
+  border:2px solid var(--brown);
+  box-shadow:0 40px 100px rgba(139,69,19,.4);
+}
+.modal.open .modal-box{transform:scale(1)}
+.modal-x{
+  position:absolute;top:18px;left:20px;width:38px;height:38px;
+  border-radius:10px;display:flex;align-items:center;justify-content:center;
+  font-size:1.6rem;line-height:1;color:var(--cream);transition:.25s;
+  background:var(--brown);
+}
+.modal-x:hover{background:var(--brown-light)}
+.modal-head{text-align:center;margin-bottom:32px}
+.modal-head h3{
+  font-family:var(--heading);font-size:1.8rem;font-weight:800;
+  color:var(--brown-dark);margin:12px 0 10px;letter-spacing:-.5px;
+}
+.modal-head p{font-size:1rem;color:var(--text-muted);line-height:1.7;font-weight: 500;}
+.form-row{margin-bottom:18px}
+.form-row label{
+  display:block;font-size:.9rem;font-weight:800;
+  color:var(--brown-dark);margin-bottom:8px;letter-spacing:.3px;
+}
+.form-row input,.form-row select,.form-row textarea{
+  width:100%;padding:14px 16px;border-radius:var(--r);
+  border:1.5px solid rgba(139,69,19,.3);background:rgba(255,255,255,.5);
+  font-family:var(--body);font-size:.95rem;color:var(--brown-dark);font-weight: 600;
+  transition:.25s;
+}
+.form-row input::placeholder,.form-row textarea::placeholder{color:var(--text-muted); font-weight: 500;}
+.form-row input:focus,.form-row select:focus,.form-row textarea:focus{
+  outline:none;border-color:var(--brown);background:#fff;
+  box-shadow:0 0 0 4px rgba(139,69,19,.1);
+}
+.form-row textarea{min-height:90px;resize:vertical}
+.modal-box .btn{width:100%;margin-top:6px}
+.form-note{
+  text-align:center;font-size:.9rem;color:var(--text-muted);font-weight: 500;
+  margin-top:20px;padding-top:20px;border-top:1px solid rgba(139,69,19,.2);
+}
+.form-note a{color:var(--brown);font-weight:800}
+
+/* ============================================================
+   MOBILE DRAWER
+============================================================ */
+.backdrop{
+  position:fixed;inset:0;background:rgba(139,69,19,.6);
+  z-index:950;opacity:0;visibility:hidden;transition:.3s;
+}
+.backdrop.show{opacity:1;visibility:visible}
+.drawer{
+  position:fixed;top:0;right:-360px;width:330px;height:100vh;
+  background:var(--brown);z-index:960;
+  display:flex;flex-direction:column;
+  padding:26px 24px;transition:right .35s ease;
+  border-left:1px solid var(--cream);
+  overflow-y:auto;
+  box-shadow: -10px 0 30px rgba(0,0,0,.3);
+}
+.drawer.show{right:0}
+.drawer-head{
+  display:flex;justify-content:space-between;align-items:center;
+  margin-bottom:36px;padding-bottom:24px;
+  border-bottom:1px solid rgba(255,245,225,.2);
+}
+.drawer-head .brand-name { color: var(--cream); }
+
+/* الشعار في قائمة الجوال (خلفية داكنة) */
+.drawer-head .brand-mark { 
+  width: 65px; height: 65px; border: none; background: transparent; margin: -5px 0;
+}
+.drawer-head .brand-mark img {
+  mix-blend-mode: screen;
+  filter: brightness(1.2);
+}
+
+.drawer-head .brand-tag { color: rgba(255,245,225,.6); }
+.drawer-close{
+  width:40px;height:40px;border-radius:10px;
+  background:rgba(255,245,225,.1);color:var(--cream);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.5rem;line-height:1;transition:.25s;
+}
+.drawer-close:hover{background:var(--cream);color:var(--brown)}
+.drawer-nav{display:flex;flex-direction:column;gap:4px;flex:1}
+.drawer-nav a{
+  padding:14px 16px;border-radius:10px;font-weight:700;
+  color:rgba(255,245,225,.7);font-size:1rem;transition:.25s;
+  display:flex;justify-content:space-between;align-items:center;
+}
+.drawer-nav a:hover,.drawer-nav a.active{
+  background:rgba(255,245,225,.1);color:var(--cream);
+}
+.drawer-sub{padding:4px 24px 8px 8px;display:flex;flex-direction:column;gap:2px}
+.drawer-sub a{
+  font-size:.9rem;padding:8px 0;color:rgba(255,245,225,.6);font-weight:600;
+}
+.drawer-sub a:hover{color:var(--cream)}
+.drawer-foot{
+  padding-top:24px;border-top:1px solid rgba(255,245,225,.2);
+  display:flex;flex-direction:column;gap:10px;
+}
+.drawer .btn-gold { background: var(--cream); color: var(--brown); border-color: var(--cream); }
+.drawer .btn-ghost { background: transparent; color: var(--cream); border-color: rgba(255,245,225,.3); }
+
+/* ============================================================
+   REVEAL ANIMATION
+============================================================ */
+.reveal{opacity:0;transform:translateY(30px);transition:.8s cubic-bezier(.2,.8,.2,1)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+@media (max-width:1100px){
+  .primary-nav{display:none}
+  .header-cta .btn{display:none}
+  .burger{display:flex}
+  .hero-grid{grid-template-columns:1fr;gap:60px}
+  .hero-visual{height:500px;max-width:600px;margin:0 auto}
+  .bento{grid-template-columns:repeat(2,1fr)}
+  .bento-item.featured{grid-column:span 2}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .stat{border-left:none;border-bottom:1px solid var(--line);padding:30px 24px}
+  .stat:nth-child(2n){border-left:1px solid var(--line)}
+  .stat:nth-last-child(-n+2){border-bottom:none}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:44px}
+  .gallery-grid{grid-template-columns:repeat(3,1fr);grid-auto-rows:200px}
+  .timeline{grid-template-columns:repeat(2,1fr);gap:44px}
+  .timeline::before{display:none}
+}
+@media (max-width:768px){
+  .container{padding:0 20px}
+  .section{padding:90px 0}
+  .hero{padding:130px 0 70px}
+  .hero-title{letter-spacing:-.5px; line-height: 1.3;}
+  .hero-visual{height:400px}
+  .hero-bento { grid-template-rows: 1.5fr 1fr 1fr; gap: 10px;}
+  .hero-box { border-width: 3px; border-radius: var(--r); }
+  .box-icon svg { width: 32px; height: 32px; }
+  .box-icon span { font-size: 1rem; }
+  
+  .brand-mark { width: 70px; height: 70px; margin: -10px 0; }
+  
+  .hero-meta{gap:24px}
+  .hero-meta-num{font-size:1.8rem}
+  .bento{grid-template-columns:1fr;gap:14px}
+  .bento-item.featured{grid-column:span 1}
+  .bento-item{min-height:280px}
+  .cta-box{padding:50px 32px;border-radius:20px}
+  .cta-actions{width:100%}
+  .cta-actions .btn{flex:1;justify-content:center}
+  .gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px;gap:10px}
+  .gallery-item.wide{grid-column:span 1}
+  .gallery-item.tall{grid-row:span 1}
+  .footer-grid{grid-template-columns:1fr;gap:40px}
+  .timeline{grid-template-columns:1fr;gap:32px}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .float-actions{left:16px;bottom:16px}
+  .float-btn{width:52px;height:52px;border-radius:14px}
+  .float-btn svg{width:22px;height:22px}
+  .modal-box{padding:36px 24px}
+  .modal-head h3{font-size:1.5rem}
+  .marquee-item{font-size:1.15rem;gap:40px}
+  .marquee-track{gap:40px}
+}
+@media (max-width:480px){
+  .hero-title{font-size:2.2rem;letter-spacing:-.5px; line-height: 1.3;}
+  .heading-lg{font-size:1.8rem;letter-spacing:-.5px; line-height: 1.3;}
+  .stats-grid{grid-template-columns:1fr}
+  .stat{border-left:none!important;padding:24px 0}
+  .stat:not(:last-child){border-bottom:1px solid var(--line)}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container">
+    <div class="header-inner">
+      <a href="#" class="brand">
+        <!-- الشعار في الهيدر (مدمج مع الخلفية الفاتحة) -->
+        <div class="brand-mark">
+          <img src="https://raw.githubusercontent.com/s5v10/photo-for-web/main/WhatsApp%20Image%202026-11-05%20at%2012.50.29%20PM.jpeg" alt="شعار لمسات فنية">
+        </div>
+        <div class="brand-text">
+          <div class="brand-name"> لمسات فنية</div>
+          <div class="brand-tag">للديكورات والدهانات . الرياض</div>
+        </div>
+      </a>
+
+      <nav class="primary-nav" aria-label="القائمة الرئيسية">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#" class="nav-link active">الرئيسية</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">من نحن</a></li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link">
+              خدماتنا
+              <svg class="caret" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+            </a>
+            <div class="dropdown">
+              <a href="#services">بديل الرخام والخشب</a>
+              <a href="#services">جبس بورد ومرايا</a>
+              <a href="#services">دهانات جوتن</a>
+              <a href="#services">بروفايل واستوكو</a>
+              <a href="#services">ترميم تسليم مفتاح</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="#gallery" class="nav-link">أعمالنا</a></li>
+          <li class="nav-item"><a href="#process" class="nav-link">كيف نعمل</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">تواصل</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <a href="#contact" class="btn btn-gold open-modal">
+          احجز استشارة
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </a>
+        <button class="burger" id="burger" aria-label="القائمة" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MOBILE DRAWER ============ -->
+<div class="backdrop" id="backdrop"></div>
+<aside class="drawer" id="drawer" aria-label="قائمة الجوال">
+  <div class="drawer-head">
+    <a href="#" class="brand">
+      <!-- الشعار في قائمة الجوال (خلفية داكنة) -->
+      <div class="brand-mark">
+        <img src="https://raw.githubusercontent.com/s5v10/photo-for-web/main/WhatsApp%20Image%202026-11-05%20at%2012.50.29%20PM.jpeg" alt="شعار لمسات فنية">
+      </div>
+      <div class="brand-text">
+        <div class="brand-name">لمسات فنية</div>
+        <div class="brand-tag">الرياض</div>
+      </div>
+    </a>
+    <button class="drawer-close" id="drawerClose" aria-label="إغلاق">&times;</button>
+  </div>
+  <nav class="drawer-nav">
+    <a href="#" class="active">الرئيسية</a>
+    <a href="#about">من نحن</a>
+    <div>
+      <a href="#services">خدماتنا <span style="font-size:.7rem;color:var(--cream)">▼</span></a>
+      <div class="drawer-sub">
+        <a href="#services">• بديل الرخام والخشب</a>
+        <a href="#services">• جبس بورد ومرايا</a>
+        <a href="#services">• دهانات داخلية</a>
+        <a href="#services">• بروفايل واستوكو</a>
+        <a href="#services">• ترميم شامل</a>
+      </div>
+    </div>
+    <a href="#gallery">أعمالنا</a>
+    <a href="#process">كيف نعمل</a>
+    <a href="#contact">تواصل</a>
+  </nav>
+  <div class="drawer-foot">
+    <a href="#contact" class="btn btn-gold open-modal" style="width:100%">
+      احجز استشارة مجانية
+    </a>
+    <a href="tel:+967730225089" class="btn btn-ghost" style="width:100%">
+      اتصل بنا الآن
+    </a>
+  </div>
+</aside>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow"> لمسات فنية · الرياض · منذ 2020</span>
+        <h1 class="hero-title">
+          نصنع مساحات<br>
+          تحكي <em>ذوقك</em><br>
+          وتليق بك
+        </h1>
+        <p class="hero-desc">
+          من أول خط على الورق حتى آخر لمسة دهان — نُحوّل منزلك إلى تحفة معمارية
+          تجمع بين أصالة التصميم ودقة التنفيذ، بأيدي حرفيين يعشقون التفاصيل.
+        </p>
+        <div class="hero-actions">
+          <a href="#services" class="btn btn-gold btn-lg">
+            اكتشف خدماتنا
+            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </a>
+          <a href="#gallery" class="btn btn-outline btn-lg">شاهد أعمالنا</a>
+        </div>
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <span class="hero-meta-num" data-count="12">+12</span>
+            <span class="hero-meta-label">سنة خبرة</span>
+          </div>
+          <div class="hero-meta-item">
+            <span class="hero-meta-num" data-count="1500">+1500</span>
+            <span class="hero-meta-label">مشروع منجز</span>
+          </div>
+          <div class="hero-meta-item">
+            <span class="hero-meta-num">100%</span>
+            <span class="hero-meta-label">ضمان الجودة</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- التصميم الجديد للمربعات والمستطيلات -->
+      <div class="hero-visual">
+        <div class="hero-bento">
+          
+          <!-- المربع الرئيسي (صورة كبيرة) -->
+          <div class="hero-box box-main">
+            <img src="https://dekurat.com/wp-content/themes/dekurat.com-main/assets/images/herosection.webp"
+                 onerror="this.src='https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1000&q=80'" alt="ديكور فاخر">
+          </div>
+
+          <!-- مربع صغير (صورة تعريفية) -->
+          <div class="hero-box box-square">
+            <img src="https://dekurat.com/wp-content/themes/dekurat.com-main/assets/images/work/IMG-20261021-WA0011.webp"
+                 onerror="this.src='https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80'" alt="مجلس">
+          </div>
+
+          <!-- مربع صغير (نص أو أيقونة) -->
+          <div class="hero-box box-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8 5.8 21.3l2.4-7.4L2 9.4h7.6z"/></svg>
+            <span>جودة معتمدة</span>
+          </div>
+
+          <!-- مستطيل عريض (صورة تفاصيل) -->
+          <div class="hero-box box-wide">
+            <img src="https://dekurat.com/wp-content/themes/dekurat.com-main/assets/images/work/IMG-20261021-WA0016.webp"
+                 onerror="this.src='https://images.unsplash.com/photo-1615874959474-d609969a20ed?w=600&q=80'" alt="تفاصيل ديكور">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">بديل الرخام</span>
+    <span class="marquee-item">بديل الخشب</span>
+    <span class="marquee-item">جبس بورد</span>
+    <span class="marquee-item">دهانات جوتن</span>
+    <span class="marquee-item">بروفايل</span>
+    <span class="marquee-item">استوكو إيطالي</span>
+    <span class="marquee-item">ترميم شامل</span>
+    <span class="marquee-item">عوازل مائية</span>
+    <span class="marquee-item">بديل الرخام</span>
+    <span class="marquee-item">بديل الخشب</span>
+    <span class="marquee-item">جبس بورد</span>
+    <span class="marquee-item">دهانات جوتن</span>
+    <span class="marquee-item">بروفايل</span>
+    <span class="marquee-item">استوكو إيطالي</span>
+    <span class="marquee-item">ترميم شامل</span>
+    <span class="marquee-item">عوازل مائية</span>
+  </div>
+</div>
+
+<!-- ============ SERVICES (BENTO) - DARK ============ -->
+<section class="section services" id="services">
+  <div class="container">
+    <div class="section-head">
+      <span class="sec-num light">01 — خدماتنا</span>
+      <h2 class="heading-lg" style="color: var(--cream);">كل ما يحتاجه منزلك،<br>تحت سقف واحد</h2>
+      <p class="lead" style="margin-top:22px; color: rgba(255,245,225,0.85);">
+        من الديكورات الجدارية الفاخرة إلى الدهانات والترميمات الشاملة — نغطي
+        كافة مراحل التشطيب بمعايير هندسية صارمة وفريق متخصص في كل مجال.
+      </p>
+    </div>
+
+    <div class="bento">
+      <article class="bento-item featured reveal">
+        <span class="bento-num">01</span>
+        <div class="bento-img">
+          <img src="https://dekurat.com/wp-content/themes/dekurat.com-main/assets/images/herosection.webp"
+               onerror="this.src='https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&q=80'"
+               alt="بديل الرخام والخشب" loading="lazy">
+        </div>
+        <div class="bento-content">
+          <span class="bento-tag">الأكثر طلباً</span>
+          <h3 class="bento-title">ديكورات بديل الرخام وبديل الخشب</h3>
+          <p class="bento-desc">
+            توريد وتركيب أفخم ألواح بديل الرخام الكوري والإسباني، وتكسيات
+            بديل الخشب المضلعة مع إضاءة LED مخفية.
+          </p>
+          <a href="#contact" class="bento-link open-modal">
+            اطلب معاينة
+            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="bento-item reveal">
+        <span class="bento-num">02</span>
+        <div class="bento-img">
+          <img src="https://dekurat.com/wp-content/themes/dekurat.com-main/assets/images/work/IMG-20261021-WA0008.webp"
+               onerror="this.src='https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?w=800&q=80'"
+               alt="جبس بورد ومرايا" loading="lazy">
+        </div>
+        <div class="bento-content">
+          <span class="bento-tag">أسقف ومرايا</span>
+          <h3 class="bento-title">جبس بورد ومرايا جدارية</h3>
+          <p class="bento-desc">
+            أسقف جبس معلقة ومرايا بلجيكية مشطوفة بأشكال هندسية حصرية.
+          </p>
+          <a href="#contact" class="bento-link open-modal">
+            اطلب معاينة
+            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="bento-item reveal">
+        <span class="bento-num">03</span>
+        <div class="bento-img">
+          <img src="https://dekurat.com/wp-content/themes/dekurat.com-main/assets/images/work/IMG-20261021-WA0006.webp"
+               onerror="this.src='https://images.unsplash.com/photo-1615873968403-89e068629265?w=800&q=80'"
+               alt="دهانات داخلية" loading="lazy">
+        </div>
+        <div class="bento-content">
+          <span class="bento-tag">خامات أصلية</span>
+          <h3 class="bento-title">دهانات داخلية بجوتن</h3>
+          <p class="bento-desc">
+            تشطيبات ناعمة كالحرير بأحدث درجات كتالوجات 2026.
+          </p>
+          <a href="#contact" class="bento-link open-modal">
+            اطلب معاينة
+            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="bento-item reveal">
+        <span class="bento-num">04</span>
+        <div class="bento-img">
+          <img src="https://dekurat.com/wp-content/themes/dekurat.com-main/assets/images/work/IMG-20261021-WA0009.webp"
+               onerror="this.src='https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80'"
+               alt="واجهات بروفايل" loading="lazy">
+        </div>
+        <div class="bento-content">
+          <span class="bento-tag">مقاوم للحرارة</span>
+          <h3 class="bento-title">بروفايل وواجهات خارجية</h3>
+          <p class="bento-desc">
+            دهانات بروفايل ورشات محببة تصمد أمام شمس الرياض.
+          </p>
+          <a href="#contact" class="bento-link open-modal">
+            اطلب معاينة
+            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="bento-item reveal">
+        <span class="bento-num">05</span>
+        <div class="bento-img">
+          <img src="https://dekurat.com/wp-content/themes/dekurat.com-main/assets/images/work/IMG-20261021-WA0011.webp"
+               onerror="this.src='https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80'"
+               alt="ترميم شامل" loading="lazy">
+        </div>
+        <div class="bento-content">
+          <span class="bento-tag">تسليم مفتاح</span>
+          <h3 class="bento-title">ترميم وتشطيب شامل للفلل</h3>
+          <p class="bento-desc">
+            إحياء كامل للفلل — هدم، سباكة، كهرباء، عزل، وضمان رسمي.
+          </p>
+          <a href="#contact" class="bento-link open-modal">
+            اطلب معاينة
+            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS - LIGHT ============ -->
+<section class="stats" id="about">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat">
+        <span class="stat-num" data-count="12">+12</span>
+        <span class="stat-lbl">عاماً من الخبرة في الرياض</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="1500">+1500</span>
+        <span class="stat-lbl">مشروع سكني وتجاري منجز</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">100%</span>
+        <span class="stat-lbl">رضا العملاء مع ضمان رسمي</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">24/7</span>
+        <span class="stat-lbl">معاينة واستشارات سريعة</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY - DARK ============ -->
+<section class="section gallery" id="gallery">
+  <div class="container">
+    <div class="section-head">
+      <span class="sec-num light">02 — معرض الأعمال</span>
+      <h2 class="heading-lg" style="color: var(--cream);">لمحات من مشاريع<br>نفّذناها بشغف</h2>
+      <p class="lead" style="margin-top:22px; color: rgba(255,245,225,0.85);">
+        باقة مختارة من أحدث مشاريعنا في مختلف أحياء الرياض — من ديكورات
+        بديل الرخام والخشب إلى أرقى أعمال الدهانات والترميمات.
+      </p>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </div>
+</section>
+
+<!-- ============ PROCESS - LIGHT ============ -->
+<section class="section process" id="process">
+  <div class="container">
+    <div class="section-head center">
+      <span class="sec-num" style="justify-content:center">03 — كيف نعمل</span>
+      <h2 class="heading-lg">أربع خطوات نحو<br>مساحة أحلامك</h2>
+      <p class="lead" style="margin-top:22px;">
+        منهجية عمل مدروسة تضمن لك تجربة سلسة من أول اتصال حتى التسليم النهائي.
+      </p>
+    </div>
+
+    <div class="timeline">
+      <div class="step reveal">
+        <div class="step-num">01</div>
+        <h4>الاستشارة</h4>
+        <p>نستمع لرؤيتك ونقترح الحلول الأنسب لمساحتك وميزانيتك.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">02</div>
+        <h4>التصميم</h4>
+        <p>نُعدّ تصاميم ثلاثية الأبعاد وعرض أسعار تفصيلي قبل البدء.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">03</div>
+        <h4>التنفيذ</h4>
+        <p>فريق متخصص ينفذ بدقة عالية مع متابعة يومية للتقدم.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">04</div>
+        <h4>التسليم</h4>
+        <p>تنظيف كامل، تسليم مفتاح، وضمان رسمي على الأعمال.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta-section" id="contact">
+  <div class="container">
+    <div class="cta-box">
+      <div class="cta-content">
+        <h2 class="heading-lg">جاهز لتحويل مساحتك<br>إلى <em>تحفة فنية</em>؟</h2>
+        <p style="margin-top:16px;">
+          احصل على استشارة ومعاينة ميدانية مجانية في جميع أحياء الرياض،
+          مع عرض تصميم مبدئي وخيارات خامات تناسب ميزانيتك.
+        </p>
+      </div>
+      <div class="cta-actions">
+        <a href="#contact" class="btn btn-gold btn-lg open-modal">
+          احجز استشارتك الآن
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </a>
+        <a href="https://wa.me/967730225089" target="_blank" rel="noopener" class="btn btn-outline btn-lg">
+          تواصل واتساب
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER - DARK ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <!-- الشعار في الفوتر (خلفية داكنة) -->
+          <div class="brand-mark">
+            <img src="https://raw.githubusercontent.com/s5v10/photo-for-web/main/WhatsApp%20Image%202026-11-05%20at%2012.50.29%20PM.jpeg" alt="شعار لمسات فنية">
+          </div>
+          <div class="brand-text">
+            <div class="brand-name">لمسات فنية</div>
+            <div class="brand-tag">للديكورات والدهانات , الرياض</div>
+          </div>
+        </div>
+        <p class="footer-about">
+           متخصصين في تنفيذ أرقى أعمال الديكورات والدهانات والترميمات
+          الشاملة في الرياض. نجمع بين الحرفية المعمارية وأحدث التقنيات
+          لنرتقي بتفاصيل منزلك إلى آفاق جديدة من الفخامة.
+        </p>
+        <div class="footer-social">
+          <a href="#" aria-label="إنستغرام"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.72-2.13 1.38A5.9 5.9 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.72 1.46 1.38 2.13a5.9 5.9 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.9 5.9 0 0 0 2.13-1.38 5.9 5.9 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.9 5.9 0 0 0-1.38-2.13A5.9 5.9 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 12 18.16 6.16 6.16 0 0 0 12 5.84zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg></a>
+          <a href="#" aria-label="تويتر"><svg viewBox="0 0 24 24"><path d="M18.9 2h3.4l-7.4 8.5L23.5 22h-6.8l-5.3-7-6.1 7H1.9l7.9-9L1 2h7l4.8 6.4L18.9 2zm-1.2 18h1.9L7.4 4H5.4l12.3 16z"/></svg></a>
+          <a href="https://wa.me/967730225089" aria-label="واتساب"><svg viewBox="0 0 24 24"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01zm-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.22.25-.86.84-.86 2.05 0 1.21.88 2.38 1 2.55.12.17 1.74 2.65 4.21 3.72.59.25 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.17-.48-.29z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>خدماتنا</h5>
+        <ul>
+          <li><a href="#services">بديل الرخام</a></li>
+          <li><a href="#services">بديل الخشب</a></li>
+          <li><a href="#services">جبس بورد ومرايا</a></li>
+          <li><a href="#services">دهانات داخلية</a></li>
+          <li><a href="#services">بروفايل خارجي</a></li>
+          <li><a href="#services">ترميم شامل</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>روابط سريعة</h5>
+        <ul>
+          <li><a href="#">الرئيسية</a></li>
+          <li><a href="#about">من نحن</a></li>
+          <li><a href="#gallery">معرض الأعمال</a></li>
+          <li><a href="#process">كيف نعمل</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>تواصل معنا</h5>
+        <ul class="footer-contact">
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <span>الرياض، المملكة العربية السعودية<br>نغطي جميع الأحياء</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <a href="tel:+967730225089" style="color:inherit;font-weight:700">+967 730 225 089</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+            <span>يومياً من 8 صباحاً حتى 10 مساءً</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026  لمسات فنية. جميع الحقوق محفوظة.</p>
+      <p>المصمم والمبرمج/ احمد الداوودي <a href="#" style="margin-right: 10px;">سياسة الخصوصية</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING ACTIONS ============ -->
+<div class="float-actions">
+  <a href="https://wa.me/967730225089" target="_blank" rel="noopener" class="float-btn float-whats" aria-label="واتساب">
+    <svg viewBox="0 0 24 24"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01zm-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.22.25-.86.84-.86 2.05 0 1.21.88 2.38 1 2.55.12.17 1.74 2.65 4.21 3.72.59.25 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.17-.48-.29z"/></svg>
+  </a>
+  <a href="tel:+967730225089" class="float-btn float-call" aria-label="اتصال">
+    <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+  </a>
+</div>
+
+<!-- ============ MODAL ============ -->
+<div class="modal" id="consultModal" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="modal-box">
+    <button class="modal-x" id="modalClose" aria-label="إغلاق">&times;</button>
+    <div class="modal-head">
+      <span class="eyebrow center">معاينة مجانية</span>
+      <h3>احجز استشارتك مع خبيرنا</h3>
+      <p>سيتواصل معك مهندسنا المختص خلال 24 ساعة لتحديد موعد المعاينة.</p>
+    </div>
+    <form id="consultForm" onsubmit="event.preventDefault(); alert('✓ تم استلام طلبك بنجاح، سنتواصل معك قريباً.'); this.reset(); closeModal();">
+      <div class="form-row">
+        <label>الاسم الكريم *</label>
+        <input type="text" required placeholder="أدخل اسمك">
+      </div>
+      <div class="form-row">
+        <label>رقم الجوال *</label>
+        <input type="tel" required placeholder="7xxxxxxxx" pattern="[0-9]{9,15}">
+      </div>
+      <div class="form-row">
+        <label>نوع الخدمة</label>
+        <select>
+          <option>ديكورات بديل الرخام والخشب</option>
+          <option>جبس بورد ومرايا</option>
+          <option>دهانات داخلية</option>
+          <option>واجهات بروفايل خارجية</option>
+          <option>ترميم شامل للفلل</option>
+          <option>استشارة شاملة</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label>تفاصيل إضافية (اختياري)</label>
+        <textarea placeholder="مثال: فيلا في حي الياسمين، نحتاج ديكورات ودهانات..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-gold">
+        إرسال وحجز موعد المعاينة
+        <svg viewBox="0 0 24 24"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg>
+      </button>
+      <div class="form-note">
+        أو تواصل مباشرة على <a href="tel:+967730225089">+967 730 225 089</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+/* ============ HEADER SCROLL ============ */
+const header = document.getElementById('siteHeader');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 30);
+}, { passive: true });
+
+/* ============ MOBILE DRAWER ============ */
+const burger = document.getElementById('burger');
+const drawer = document.getElementById('drawer');
+const backdrop = document.getElementById('backdrop');
+const drawerClose = document.getElementById('drawerClose');
+function openDrawer(){ drawer.classList.add('show'); backdrop.classList.add('show'); burger.setAttribute('aria-expanded','true'); }
+function closeDrawer(){ drawer.classList.remove('show'); backdrop.classList.remove('show'); burger.setAttribute('aria-expanded','false'); }
+burger.addEventListener('click', openDrawer);
+drawerClose.addEventListener('click', closeDrawer);
+backdrop.addEventListener('click', closeDrawer);
+
+/* ============ GALLERY (Original Images) ============ */
+(function(){
+  const grid = document.getElementById('galleryGrid');
+  if (!grid) return;
+  const BASE = 'https://dekurat.com/wp-content/themes/dekurat.com-main/assets/images/work/';
+  // صور من الموقع الأصلي + fallbacks
+  const imgs = [
+    { f:'%D8%AC%D8%A8%D8%B3-%D8%A8%D9%88%D8%B1%D8%AF-30.webp', cat:'جبس بورد', title:'أسقف حديثة', fallback:'https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?w=600&q=80' },
+    { f:'%D8%A8%D8%AF%D9%8A%D9%84-%D8%A7%D9%84%D8%AE%D8%B4%D8%A8-5.webp', cat:'بديل خشب', title:'تكسيبات خشبية', tall:true, fallback:'https://images.unsplash.com/photo-1615874959474-d609969a20ed?w=600&q=80' },
+    { f:'%D8%AF%D9%8A%D9%83%D9%88%D8%B1%D8%A7%D8%AA-%D9%81%D9%88%D9%85-25.webp', cat:'ديكورات فوم', title:'براويز فوم', fallback:'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=600&q=80' },
+    { f:'%D8%AF%D9%87%D8%A7%D9%86%D8%A7%D8%AA-%D8%AE%D8%A7%D8%B1%D8%AC%D9%8A%D8%A9-6.webp', cat:'واجهات', title:'بروفايل خارجي', fallback:'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80' },
+    { f:'%D8%A8%D8%AF%D9%8A%D9%84-%D8%A7%D9%84%D8%B1%D8%AE%D8%A7%D9%85-8.webp', cat:'بديل رخام', title:'ديكور رخامي', wide:true, fallback:'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=900&q=80' },
+    { f:'%D8%AF%D9%87%D8%A7%D9%86%D8%A7%D8%AA-%D8%AF%D8%A7%D8%AE%D9%84%D9%8A%D8%A9-33.webp', cat:'دهانات', title:'تشطيب داخلي', fallback:'https://images.unsplash.com/photo-1615873968403-89e068629265?w=600&q=80' },
+    { f:'%D8%A8%D8%AF%D9%8A%D9%84-%D8%A7%D9%84%D8%AE%D8%B4%D8%A8-21.webp', cat:'بديل خشب', title:'خشب مضلع', fallback:'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&q=80' },
+    { f:'%D8%A8%D8%AF%D9%8A%D9%84-%D8%A7%D9%84%D8%B1%D8%AE%D8%A7%D9%85-26.webp', cat:'بديل رخام', title:'خلفية شاشة', fallback:'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&q=80' },
+    { f:'%D8%A8%D8%AF%D9%8A%D9%84-%D8%A7%D9%84%D8%AE%D8%B4%D8%A8-17.webp', cat:'بديل خشب', title:'مداخل خشبية', tall:true, fallback:'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80' },
+    { f:'%D8%A8%D8%AF%D9%8A%D9%84-%D8%A7%D9%84%D8%B1%D8%AE%D8%A7%D9%85-19.webp', cat:'بديل رخام', title:'مداخل رخامية', fallback:'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80' },
+    { f:'%D8%AF%D9%87%D8%A7%D9%86%D8%A7%D8%AA-%D8%AF%D8%A7%D8%AE%D9%84%D9%8A%D8%A9-41.webp', cat:'دهانات', title:'جوتن فاخر', fallback:'https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=600&q=80' },
+    { f:'%D8%AC%D8%A8%D8%B3-%D8%A8%D9%88%D8%B1%D8%AF-5.webp', cat:'جبس بورد', title:'جبس معلق', fallback:'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&q=80' }
+  ];
+  imgs.forEach(it => {
+    const div = document.createElement('div');
+    div.className = 'gallery-item' + (it.tall ? ' tall' : '') + (it.wide ? ' wide' : '');
+    const img = document.createElement('img');
+    img.loading = 'lazy';
+    img.alt = it.title;
+    img.src = BASE + it.f;
+    img.onerror = () => { img.src = it.fallback; };
+    div.appendChild(img);
+    div.insertAdjacentHTML('beforeend', `
+      <div class="gallery-cap">
+        <div class="gallery-cap-tag">${it.cat}</div>
+        <div class="gallery-cap-title">${it.title}</div>
+      </div>
+    `);
+    div.addEventListener('click', () => window.open(img.src, '_blank'));
+    grid.appendChild(div);
+  });
+})();
+
+/* ============ MODAL ============ */
+const modal = document.getElementById('consultModal');
+const modalClose = document.getElementById('modalClose');
+document.querySelectorAll('.open-modal').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden','false');
+    closeDrawer();
+  });
+});
+modalClose.addEventListener('click', closeModal);
+modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+function closeModal(){
+  modal.classList.remove('open');
+  modal.setAttribute('aria-hidden','true');
+}
+
+/* ============ COUNTERS ============ */
+(function(){
+  const nums = document.querySelectorAll('[data-count]');
+  if (!nums.length) return;
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(en => {
+      if (en.isIntersecting) {
+        const el = en.target;
+        const target = parseInt(el.dataset.count);
+        let cur = 0;
+        const step = Math.max(1, Math.ceil(target / 40));
+        const prefix = el.textContent.startsWith('+') ? '+' : '';
+        const tick = () => {
+          cur += step;
+          if (cur >= target) { el.textContent = prefix + target; return; }
+          el.textContent = prefix + cur;
+          requestAnimationFrame(tick);
+        };
+        tick();
+        io.unobserve(el);
+      }
+    });
+  }, { threshold: 0.4 });
+  nums.forEach(n => io.observe(n));
+})();
+
+/* ============ SCROLL REVEAL ============ */
+(function(){
+  const els = document.querySelectorAll('.reveal');
+  if (!els.length) return;
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(en => {
+      if (en.isIntersecting) {
+        en.target.classList.add('visible');
+        io.unobserve(en.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  els.forEach(el => io.observe(el));
+})();
+
+/* ============ SMOOTH SCROLL ============ */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', (e) => {
+    const href = a.getAttribute('href');
+    if (href === '#') return;
+    const target = document.querySelector(href);
+    if (target) {
+      e.preventDefault();
+      const top = target.getBoundingClientRect().top + window.scrollY - 80;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
+  });
+});
+</script>
+
+</body>
+</html>
